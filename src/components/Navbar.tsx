@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 function Navbar() {
     return (
-        <div className=' max-[700px]:hidden fixed border rounded border-gray-700 w-screen bg min-h-20 flex justify-between items-center px-7 text-lg'>
+        <div className=' max-[700px]:hidden fixed border rounded border-gray-700 w-screen bg min-h-20 flex justify-between items-center px-5 text-lg'>
             {/* logo */}
             <div className=' '>
                 <Link href={'/'} >
@@ -15,7 +15,7 @@ function Navbar() {
                 </Link>
             </div>
             {/* Menu */}
-            <div className=' bg-[#1b1a1a] text-xl  px-8 rounded-xl min-h-14 flex justify-center items-center' >
+            <div className=' bg-[#1b1a1a]   px-8 rounded-xl min-h-14 flex justify-center items-center' >
                 <ul className=" min-h-15  list-none flex space-x-10 hover:text-white ">
                     <li className=' hover:text-red-500'>
                         <Link href={'/'} >About</Link>
@@ -31,7 +31,7 @@ function Navbar() {
 
             </div>
             {/* Contact Us */}
-            <div className='text-2xl'>
+            <div className=' '>
                 <Link href={'/'}> Contact Us</Link>
             </div>
         </div>
