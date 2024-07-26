@@ -2,11 +2,9 @@
 import { MoveDownLeft } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { ExternalLink, Github } from 'lucide-react';
 import projects from "@/data/projects.json"
 import { motion } from 'framer-motion';
-import { ArrowDownLeft } from 'lucide-react';
 import Image from 'next/image';
 interface Projects {
   "id": number,

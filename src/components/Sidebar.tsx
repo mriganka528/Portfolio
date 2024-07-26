@@ -6,7 +6,6 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -24,7 +23,7 @@ function Sidebar() {
         <SheetHeader >
           <SheetTitle className='flex justify-center pt-14'>
             <ScrollLink to='home' >
-              <Image src={'/assets/newLogo.png'} alt='logo' height={40} width={40}></Image>
+              <Image src={'/assets/logos/newLogo.png'} alt='logo' height={40} width={40}></Image>
             </ScrollLink>
           </SheetTitle>
         </SheetHeader>

@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { Link as ScrollLink } from 'react-scroll'
-import { AlignRight } from 'lucide-react'
 import { motion } from "framer-motion"
 import Sidebar from './Sidebar'
 function MobileNav() {

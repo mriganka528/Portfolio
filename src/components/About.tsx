@@ -2,7 +2,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { MoveDownLeft } from 'lucide-react'
-import { MoveDownRight } from 'lucide-react'
 import techSkills from "@/data/skills.json"  
 import { motion } from 'framer-motion'
 interface Skills {
