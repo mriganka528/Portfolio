@@ -22,7 +22,7 @@ function About() {
                 }} className="mt-4 lg:pt-44  xl:pt-52 w-screen  text-left flex flex-col gap-y-24 lg:gap-y-0 lg:flex-row h-svh lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
                 <Image className='rounded hidden lg:flex ' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
                 <Image className='photo rounded flex lg:hidden ' src={'/assets/me3.png'} alt='about image' height={260} width={260}></Image>
-                <div className='max-w-[35rem] mx-11 xl:mx-0  lg:pt-0 border-l-2 px-7 sm:px-10 border-r-2 border-gray-500'>
+                <div className='max-w-[35rem] mx-5 xl:mx-0  lg:pt-0 border-l-2 px-7 sm:px-10 border-r-2 border-gray-500'>
                     <div className='flex space-x-1'>
                         <span className=" font-customFont text-2xl  sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">ABOUT ME</span>
                         <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
