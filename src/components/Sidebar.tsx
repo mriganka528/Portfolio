@@ -23,7 +23,7 @@ function Sidebar() {
       <SheetContent>
         <SheetHeader >
           <SheetTitle className='flex justify-center pt-14'>
-            <ScrollLink to='Home' >
+            <ScrollLink to='home' >
               <Image src={'/assets/newLogo.png'} alt='logo' height={40} width={40}></Image>
             </ScrollLink>
           </SheetTitle>
