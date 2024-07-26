@@ -18,7 +18,7 @@ function Navbar() {
             {/* logo */}
             <div className='font-customFont'>
                 <ScrollLink duration={70} to='home' className='cursor-pointer' >
-                    <Image src={'/assets/newLogo.png'} alt='Logo' height={50} width={50}></Image>
+                    <Image src={'/assets/logos/newLogo.png'} alt='Logo' height={50} width={50}></Image>
                 </ScrollLink>
             </div>
             {/* Menu */}

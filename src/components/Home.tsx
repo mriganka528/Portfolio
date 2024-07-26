@@ -12,8 +12,8 @@ function HomeComp() {
                 delay: 0.3,
                 duration: 0.8,
                 ease: "easeInOut",
-            }} className='pl-16  md:pl-32 lg:px-20 w-screen h-svh flex justify-center items-center pt-32 '>
-            <div className=' flex flex-col  pl-0 justify-center border-l-2 border-gray-500  '>
+            }} className='pl-14  md:pl-32 lg:px-20 w-screen h-svh flex justify-center items-center pt-32 '>
+            <div className=' flex flex-col  justify-center border-l-2 border-gray-500  '>
                 <span className='h-[.1rem]  w-[10%] bg-gray-500'></span>
                 <div className='pl-10 md:pl-16 py-14'>
                     <h1 className="heading">Hello I&apos;m,</h1>
@@ -24,15 +24,15 @@ function HomeComp() {
                             <span className="buttonContent">Hire Me</span>
                         </Link>
 
-                        <Link href={'/assets/cv.pdf'} download={'CV'} className='button border border-[rgb(117, 3, 117)]'  >
+                        <a href={'/assets/cv.pdf'} download className='button border border-[rgb(117, 3, 117)]'  >
                             <span className='buttonContent'>Download CV</span>
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <span className='h-[.1rem] w-[10%] bg-gray-500'></span>
             </div>
             <div className="image hidden lg:flex   ">
-                <Image src={'/assets/me2.png'} className='photo rounded-full ' height={400} width={400} alt='My image'></Image>
+                <Image src={'/assets/profile/me2.png'} className='photo rounded-full ' height={400} width={400} alt='My image'></Image>
             </div>
 
         </motion.div>

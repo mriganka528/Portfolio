@@ -3,77 +3,77 @@
         {
             "id": 1,
             "name": "html",
-            "image": "/assets/html.svg"
+            "image": "/assets/languages/html.svg"
         },
         {
             "id": 2,
             "name": "CSS",
-            "image": "/assets/css.svg"
+            "image": "/assets/languages/css.svg"
         },
         {
             "id": 4,
             "name": "Java Script",
-            "image": "/assets/javascript.svg"
+            "image": "/assets/languages/javascript.svg"
         },
         {
             "id": 5,
             "name": "Tailwind",
-            "image": "/assets/tailwind-css-2.svg"
+            "image": "/assets/languages/tailwind-css-2.svg"
         },
         {
             "id": 6,
             "name": "react",
-            "image": "/assets/react.svg"
+            "image": "/assets/languages/react.svg"
         },
         {
             "id": 7,
             "name": "Typescript",
-            "image": "/assets/typescript.svg"
+            "image": "/assets/languages/typescript.svg"
         },
         {
             "id": 8,
             "name": "Node js",
-            "image": "/assets/nodejs.svg"
+            "image": "/assets/languages/nodejs.svg"
         },
         {
             "id": 9,
             "name": "Express js",
-            "image": "/assets/express-js.svg"
+            "image": "/assets/languages/express-js.svg"
         },
         {
             "id": 10,
             "name": "Next js",
-            "image": "/assets/next-js.svg"
+            "image": "/assets/languages/next-js.svg"
         },
         {
             "id": 11,
             "name": "Redux",
-            "image": "/assets/redux.svg"
+            "image": "/assets/languages/redux.svg"
         },
         {
             "id": 12,
             "name": "my sql",
-            "image": "/assets/mysql.svg"
+            "image": "/assets/languages/mysql.svg"
         },
         {
             "id": 13,
             "name": "mongoDB",
-            "image": "/assets/mongodb.svg"
+            "image": "/assets/languages/mongodb.svg"
         },
         {
             "id": 14,
             "name": "Github",
-            "image":  "/assets/github.svg"
+            "image":  "/assets/languages/github.svg"
         },
         {
             "id": 15,
             "name": "vs code",
-            "image": "/assets/vscode.svg"
+            "image": "/assets/languages/vscode.svg"
         },
         {
             "id": 16,
             "name": "AWS",
-            "image": "/assets/amazon.svg"
+            "image": "/assets/languages/amazon.svg"
         }
     ]
 }

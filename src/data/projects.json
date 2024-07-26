@@ -3,8 +3,8 @@
         {
             "id": 1,
             "name": "TextMaster",
-            "desc": "Welcome to TextMaster! Our powerful text processing tool offers a range of features to enhance your text manipulation experience. You can easily convert text to UPPER CASE or lower case, capitalize each word, count the number of words, and even calculate the time required to read it. Experience seamless and efficient text processing with TextMaster",
-            "image": "/assets/textconverter.png",
+            "desc": "Welcome to TextMaster! Our powerful text processing tool offers a range of features to enhance your text manipulation experience. You can easily convert text to UPPER CASE or lower case, capitalize each word, count the number of words, and even calculate the time required to read it. Experience seamless and efficient text processing with TextMaster.",
+            "image": "/assets/projects/textconverter.png",
             "tags": [
                 "ReactJS",
                 "Bootstrap "
@@ -15,8 +15,8 @@
         {
             "id": 2,
             "name": "InspireArt",
-            "desc": "Welcome to AI Image Master! Our cutting-edge platform harnesses the power of artificial intelligence to generate stunning images effortlessly. Whether you need unique visuals for your projects, custom artwork, or creative designs, AI Image Master has you covered. Simply input your ideas, and let our AI bring them to life with remarkable precision and creativity. Experience the future of image generation with AI Image Master",
-            "image": "/assets/imageGenerator.png",
+            "desc": "Welcome to AI InspireArt! Our cutting-edge platform harnesses the power of artificial intelligence to generate stunning images effortlessly. Whether you need unique visuals for your projects, custom artwork, or creative designs, AI InspireArt has you covered. Simply input your ideas, and let our AI bring them to life with remarkable precision and creativity. Experience the future of image generation with AI InspireArt.",
+            "image": "/assets/projects/imageGenerator.png",
             "tags": [
                 "ReactJS",
                 "FetchAPI"
@@ -26,22 +26,23 @@
         },
         {
             "id": 3,
-            "name": "BeatVault(Frontend Website)",
-            "desc": " Discover and enroll in expertly crafted music courses designed to elevate your skills. Whether you're a beginner or an advanced musician, our courses cover a wide range of instruments and genres, taught by professional instructors. Start your musical journey today with MusicCoursePro and unlock your full potential",
-            "image": "/assets/musiccourse.png",
+            "name": "Portfolio",
+            "desc": "Welcome to my professional portfolio website! This site serves as a comprehensive showcase of my work as a full-stack developer. Here, you'll find detailed information about my skills, projects, and professional journey. The website is designed to provide a user-friendly experience, highlighting my ability to create responsive and dynamic web applications. Explore my portfolio to see how I bring ideas to life through innovative technology and design.",
+            "image": "/assets/projects/portfolio.png",
             "tags": [
                 "NextJS",
                 "Typescript",
-                "ShadCN"
+                "ShadCN",
+                "Tailwind"
             ],
-            "Link": "https://beat-boulevard.vercel.app/",
-            "gitLink":"https://github.com/mriganka528/Beat-boulevard.git"
+            "Link": "https://my-portfolio-delta-nine-43.vercel.app/",
+            "gitLink":"https://github.com/mriganka528/portfolio.git"
         },
         {
             "id": 4,
             "name": "TaskVault",
-            "desc": "Our comprehensive task management website is designed to help you organize and prioritize your tasks effortlessly. With features that allow you to create, edit, and delete tasks, set deadlines, and track your progress, TaskMaster ensures you stay on top of your to-do list. Our intuitive interface and secure login system make task management a breeze. Achieve your goals and boost your productivity ",
-            "image": "/assets/taskVault.png",
+            "desc": "Our comprehensive task management website is designed to help you organize and prioritize your tasks effortlessly. With features that allow you to create, edit, and delete tasks, set deadlines, and track your progress, TaskMaster ensures you stay on top of your to-do list. Our intuitive interface and secure login system make task management a breeze. Achieve your goals and boost your productivity. ",
+            "image": "/assets/projects/taskVault.png",
             "tags": [
                 "ReactJS",
                 "Tailwind",
@@ -53,8 +54,8 @@
         {
             "id": 5,
             "name": "NoteCraft",
-            "desc": "Welcome to NoteCraft! Our innovative notebook website allows you to securely store your notes in the cloud, ensuring they are accessible anytime, anywhere. With robust login and sign-up features, your data is protected and private. NoteCraft also offers seamless functionality to add, edit, and delete notes, making it the perfect tool for all your note-taking needs. Experience secure and efficient note management with CloudNote",
-            "image": "/assets/notecraft.png",
+            "desc": "Welcome to NoteCraft! Our innovative notebook website allows you to securely store your notes in the cloud, ensuring they are accessible anytime, anywhere. With robust login and sign-up features, your data is protected and private. NoteCraft also offers seamless functionality to add, edit, and delete notes, making it the perfect tool for all your note-taking needs. Experience secure and efficient note management with Notecraft.",
+            "image": "/assets/projects/notecraft.png",
             "tags": [
                 "ReactJs",
                 "NodeJs",
@@ -67,12 +68,13 @@
         {
             "id": 6,
             "name": "BeatVault(Frontend Website)",
-            "desc": " Discover and enroll in expertly crafted music courses designed to elevate your skills. Whether you're a beginner or an advanced musician, our courses cover a wide range of instruments and genres, taught by professional instructors. Start your musical journey today with MusicCoursePro and unlock your full potential!",
-            "image": "/assets/musiccourse.png",
+            "desc": " Discover and enroll in expertly crafted music courses designed to elevate your skills. Whether you're a beginner or an advanced musician, our courses cover a wide range of instruments and genres, taught by professional instructors. Start your musical journey today with MusicCoursePro and unlock your full potential.",
+            "image": "/assets/projects/musiccourse.png",
             "tags": [
                 "NextJS",
                 "Typescript",
-                "ShadCN "
+                "ShadCN ",
+                "Tailwind"
             ],
             "Link": "https://beat-boulevard.vercel.app/",
             "gitLink":"https://github.com/mriganka528/Beat-boulevard.git"

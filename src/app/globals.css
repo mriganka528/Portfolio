@@ -51,7 +51,7 @@ body {
 }
 
 .heading {
-  background: -webkit-linear-gradient(95deg, #ffffff 0%,  #b20cea 100%);
+  background: -webkit-linear-gradient(95deg, #ffffff 0%, #b20cea 100%);
   font-size: 6rem;
   font-weight: 600;
   text-align: left;
@@ -63,7 +63,7 @@ body {
 }
 
 .Type {
-  background: -webkit-linear-gradient(94deg, #ffffff 0%,  #b20cea 100%);
+  background: -webkit-linear-gradient(94deg, #ffffff 0%, #b20cea 100%);
   font-size: 6rem;
   font-weight: 600;
   text-align: left;
@@ -73,33 +73,37 @@ body {
   /* letter-spacing: .44rem; */
   animation: typing 2s steps(28, end) infinite;
 }
-@media(max-width:1024px)
-{
-  .heading{
+
+@media(max-width:1024px) {
+  .heading {
     font-size: 4rem;
   }
-  .Type{
+
+  .Type {
     font-size: 4rem;
   }
 }
-@media(max-width:768px)
-{
-  .heading{
+
+@media(max-width:768px) {
+  .heading {
     font-size: 3rem;
   }
-  .Type{
+
+  .Type {
     font-size: 3rem;
   }
 }
-@media(max-width:600px)
-{
-  .heading{
+
+@media(max-width:600px) {
+  .heading {
     font-size: 2rem;
   }
-  .Type{
+
+  .Type {
     font-size: 2rem;
   }
 }
+
 /* The typing effect */
 @keyframes typing {
   from {
@@ -158,4 +162,12 @@ body {
 .logo_jump:hover {
   transform: translateY(-1.8px);
 
+}
+
+.scale_logo {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.scale_logo :hover{
+  transform: scale(.98);
 }

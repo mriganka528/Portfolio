@@ -20,21 +20,21 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='  w-screen px-60'>
+    <section id='projects' className='w-screen '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.3,
           duration: 0.8,
           ease: "easeInOut",
-        }} className='pt-52 pb-7 '>
-        <div className='flex  justify-end'>
-          <span className=" font-customFont  text-gray-200 text-6xl font-bold mb-4">PROJECTS</span>
-          <MoveDownLeft size={55} />
+        }} className='pt-32  md:pt-36 lg:pt-44  xl:pt-52 pb-7 '>
+        <div className='flex  px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-end'>
+          <span className=" font-customFont text-2xl  sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">PROJECTS</span>
+          <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
         </div>
       </motion.div>
       <div>
-        <div className="flex flex-col gap-10 space-y-6 ">
+        <div className="flex flex-col gap-10 space-y-7  px-14 sm:px-32 px-50 md:px-48 lg:px-60  ">
           {projects.projects.map((project: Projects) => (
             <motion.div
               initial={{ opacity: 0, y: 90 }}
@@ -69,22 +69,22 @@ function Projects() {
                 className={`flex-[1] ${project.id % 2 === 0 ? "text-right" : "text-left"
                   }`}
               >
-                <p className="relative text-3xl antialiased font-semibold mb-6">
+                <p className="relative  text-xl  sm:text-2xl lg:text-3xl antialiased font-semibold mb-6">
                   {project.name}
                 </p>
                 <p
-                  className="text-slate-300 text-lg antialiased"
+                  className="text-slate-300 text-sm sm:text-base lg:text-lg  antialiased"
                   dangerouslySetInnerHTML={{
                     __html: project?.desc,
                   }}
                 />
                 <div
-                  className={`list-none flex items-center  flex-wrap font-mono antialiased gap-3 rounded-lg text-base ${project.id % 2 === 0 ? "justify-end" : "justify-start"
+                  className={`list-none flex items-center  flex-wrap font-mono antialiased gap-3 rounded-lg text-sm sm:text-base lg:text-lg ${project.id % 2 === 0 ? "justify-end" : "justify-start"
                     } mt-5`}
                 >
                   {project.tags.map(
                     (tech: string, techIndex: number) => (
-                      <li key={techIndex} style={{ wordSpacing: "-3px", color: "#64ffda" }}>
+                      <li key={techIndex} style={{ wordSpacing: "-3px", color: "#64ffda" }} className=' border border-slate-800 px-[5px] py-[2px] rounded-[4px]'>
                         {tech}
                       </li>
                     )
@@ -95,7 +95,7 @@ function Projects() {
                     }`}
                 >
                   <Link href={project.Link} target="_blank">
-                    <p className="flex items-center text-base antialiased gap-2 cursor-pointer">
+                    <p className="flex items-center text-sm sm:text-base lg:text-lg  antialiased gap-2 cursor-pointer">
                       Live Demo{" "}
                       <span>
                         <ExternalLink size={18} />
@@ -103,7 +103,7 @@ function Projects() {
                     </p>
                   </Link>
                   <Link href={project.gitLink} target="_blank">
-                    <p className="flex items-center gap-2 cursor-pointer text-base antialiased">
+                    <p className="flex items-center gap-2 cursor-pointer text-sm sm:text-base lg:text-lg  antialiased">
                       GitHub{" "}
                       <span>
                         <Github size={18} />

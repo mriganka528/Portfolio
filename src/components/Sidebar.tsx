@@ -15,8 +15,8 @@ import { AlignRight } from 'lucide-react'
 function Sidebar() {
   return (
     <Sheet>
-      <SheetTrigger>
-        <div className='border border-gray-400 antialiased p-[.3rem] rounded-full'>
+      <SheetTrigger className='scale_logo'>
+        <div className='  border  border-gray-400 antialiased p-[.3rem] rounded-full'>
           <AlignRight size={25} className=' text-gray-400 antialiased ' />
         </div>
       </SheetTrigger>
