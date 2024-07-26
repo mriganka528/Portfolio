@@ -39,32 +39,38 @@ function About() {
                         I am excited to work with others to create amazing applications.
                     </p>
                 </div>
-            </motion.div >
-            <motion.div initial={{ opacity: 0.0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    delay: 0.3,
-                    duration: 0.8,
-                    ease: "easeInOut",
-                }} className='skills pt-52 '>
-                <div className='flex px-60'>
+            </motion.div>
+            <div className='skills w-screen pt-52 '>
+                <motion.div initial={{ opacity: 0.0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        delay: 0.3,
+                        duration: 0.8,
+                        ease: "easeInOut",
+                    }} className='flex px-60'>
                     <span className=" font-customFont  text-gray-200 text-6xl font-bold mb-4">SKILLS</span>
                     <MoveDownLeft size={55} />
-                </div>
+                </motion.div>
                 <div className='flex flex-wrap px-60 pt-7 justify-center items-center gap-6 '>
                     {
                         techSkills.techSkills.map((skills: Skills) => {
                             return (
-                                <div className=' h-24 w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700' key={skills.id}>
+                                <motion.div initial={{ opacity: 0.0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{
+                                        delay: 0.3,
+                                        duration: 0.8,
+                                        ease: "easeInOut",
+                                    }} className=' h-24 w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700' key={skills.id}>
                                     <Image src={skills.image} alt={skills.name} height={100} width={100}></Image>
-                                </div>
+                                </motion.div>
                             )
 
                         })
                     }
                 </div>
-            </motion.div>
-        </div>
+            </div>
+        </div >
     )
 }
 
