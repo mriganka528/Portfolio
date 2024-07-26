@@ -20,7 +20,7 @@ function Connect() {
                 </span>
                 <div className='flex justify-center items-center'>
                     <span className='font-customFont border-b-2 border-gray-400'>
-                        let's talk
+                        let&apos;s talk
                     </span>
                     <ScrollLink to='talk' duration={50}>
                         <ArrowDownLeft size={100} />
@@ -35,8 +35,8 @@ function Connect() {
                     ease: "easeInOut",
                 }} className='flex justify-between items-center pt-32 gap-x-10 '>
                 <div className='flex flex-col max-w-[50%]  gap-y-7'>
-                    <h2 className='text-5xl text-gray-300 antialiased'>Let's Connect</h2>
-                    <p className=' antialiased text-lg text-wrap text-gray-400  w-[70%]'>I'm currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    <h2 className='text-5xl text-gray-300 antialiased'>Let&apos;s Connect</h2>
+                    <p className=' antialiased text-lg text-wrap text-gray-400  w-[70%]'>I&apos;m currently looking for new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
                     <div className=' flex text-gray-300  gap-x-5'>
                         <Link href={'https://www.linkedin.com/in/mriganka-sarma-987317231'} target='_blank' className='logo_jump'>
                             <Linkedin size={30} className=' antialiased' />
