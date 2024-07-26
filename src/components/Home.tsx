@@ -12,13 +12,13 @@ function HomeComp() {
                 delay: 0.3,
                 duration: 0.8,
                 ease: "easeInOut",
-            }} className='px-20 w-screen h-svh flex justify-center items-center pt-32 '>
-            <div className=' flex flex-col pr-0justify-center border-l-2 border-gray-500  '>
+            }} className='pl-16  md:pl-32 lg:px-20 w-screen h-svh flex justify-center items-center pt-32 '>
+            <div className=' flex flex-col  pl-0 justify-center border-l-2 border-gray-500  '>
                 <span className='h-[.1rem]  w-[10%] bg-gray-500'></span>
-                <div className='pl-16 py-14'>
+                <div className='pl-10 md:pl-16 py-14'>
                     <h1 className="heading">Hello I&apos;m,</h1>
                     <h1 className='Type'> Mriganka Sarma |</h1>
-                    <p className='text-left w-[70%] text-gray-300 text-wrap antialiased text-lg max-w-[50rem upp'>Hello myself, Mriganka Sarma: Versatile full-stack developer proficient in front-end and back-end technologies.</p>
+                    <p className='text-left w-[70%] text-gray-300 pt-5 lg:pt-0 text-wrap antialiased text-sm lg:text-lg max-w-[50rem upp'>Hello myself, Mriganka Sarma: Versatile full-stack developer proficient in front-end and back-end technologies.</p>
                     <div className='flex pt-8  space-x-5'>
                         <Link href={'mailto:mrigankasarma222@gmail.com'} target='_blank' className='button' >
                             <span className="buttonContent">Hire Me</span>
@@ -31,7 +31,7 @@ function HomeComp() {
                 </div>
                 <span className='h-[.1rem] w-[10%] bg-gray-500'></span>
             </div>
-            <div className="image">
+            <div className="image hidden lg:flex   ">
                 <Image src={'/assets/me2.png'} className='photo rounded-full ' height={400} width={400} alt='My image'></Image>
             </div>
 

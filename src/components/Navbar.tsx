@@ -14,7 +14,7 @@ function Navbar() {
             delay: 0.3,
             duration: 0.8,
             ease: "easeInOut",
-        }}  className=' z-50  max-[700px]:hidden fixed border-l border-r border-b rounded border-gray-700 w-screen min-h-20 flex justify-between items-center px-5 text-base backdrop-blur-sm '>
+        }}  className=' z-50  max-[768px]:hidden fixed border-l border-r border-b rounded border-gray-700 w-screen min-h-20 flex justify-between items-center px-5 text-base backdrop-blur-sm '>
             {/* logo */}
             <div className='font-customFont'>
                 <ScrollLink duration={70} to='home' className='cursor-pointer' >

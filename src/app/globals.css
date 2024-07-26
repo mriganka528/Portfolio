@@ -73,7 +73,33 @@ body {
   /* letter-spacing: .44rem; */
   animation: typing 2s steps(28, end) infinite;
 }
-
+@media(max-width:1024px)
+{
+  .heading{
+    font-size: 4rem;
+  }
+  .Type{
+    font-size: 4rem;
+  }
+}
+@media(max-width:768px)
+{
+  .heading{
+    font-size: 3rem;
+  }
+  .Type{
+    font-size: 3rem;
+  }
+}
+@media(max-width:600px)
+{
+  .heading{
+    font-size: 2rem;
+  }
+  .Type{
+    font-size: 2rem;
+  }
+}
 /* The typing effect */
 @keyframes typing {
   from {

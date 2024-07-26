@@ -19,14 +19,15 @@ function About() {
                     delay: 0.3,
                     duration: 0.8,
                     ease: "easeInOut",
-                }} className="mt-4  pt-52 w-screen text-left flex h-full justify-evenly items-center">
-                <Image className='rounded' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
-                <div className='max-w-[35rem] border-l-2 px-10 border-r-2 border-gray-500'>
+                }} className="mt-4 lg:pt-44  xl:pt-52 w-screen  text-left flex flex-col gap-y-24 lg:gap-y-0 lg:flex-row h-svh lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
+                <Image className='rounded hidden lg:flex ' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
+                <Image className='photo rounded flex lg:hidden ' src={'/assets/me3.png'} alt='about image' height={260} width={260}></Image>
+                <div className='max-w-[35rem] mx-14 xl:mx-0  lg:pt-0 border-l-2 px-7 sm:px-10 border-r-2 border-gray-500'>
                     <div className='flex space-x-1'>
-                        <span className=" font-customFont  text-gray-200 text-6xl font-bold mb-7">ABOUT ME</span>
-                        <MoveDownLeft size={55} />
+                        <span className=" font-customFont text-2xl  sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">ABOUT ME</span>
+                        <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
                     </div>
-                    <p className="text-base lg:text-lg antialiased">
+                    <p className="text-sm sm:text-base lg:text-lg antialiased">
                         I&apos;m a full stack web developer with a passion for creating
                         interactive and responsive web applications. I have experience
                         working with <span className=' text-[#64ffda]'>  JavaScript, React, Redux, Node.js, Express, PostgreSQL,
