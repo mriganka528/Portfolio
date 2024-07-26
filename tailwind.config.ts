@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        customFont: ['"Bodoni Moda SC"', "serif"],
+        // Add more custom font families as needed
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

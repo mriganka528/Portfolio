@@ -1,27 +1,69 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
+import { MoveDownLeft } from 'lucide-react'
+import { MoveDownRight } from 'lucide-react'
+import techSkills from "@/data/skills.json"
+import { motion } from 'framer-motion'
+interface Skills {
+    id: number,
+    name: string,
+    image: string,
+}
 function About() {
     return (
-        <div className='px-10  w-screen flex justify-evenly  items-center pt-48'>
-            <div className=' flex flex-col justify-center  '>
-                <h1 className="heading  ">Hello I'm,</h1>
-                <h1 className='Type'> Mriganka Sarma |</h1>
-                <p className='text-left text-gray-400 text-wrap antialiased text-lg max-w-[50rem]'>Hello myself, Mriganka Sarma: Versatile full-stack developer proficient in front-end and back-end technologies.</p>
-                <div className='flex pt-3 space-x-5'>
-                    <Link href={'/'} className='button' >
-                        <span className="buttonContent">Hire</span>
-                    </Link>
-
-                    <Link href={'/'} className='button border border-[rgb(117, 3, 117)]'  >
-                        <span className='buttonContent'>Download CV</span>
-                    </Link>
+        <div id="about" >
+            <motion.div initial={{ opacity: 0.0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: "easeInOut",
+                }} className="mt-4  pt-52 w-screen text-left flex h-full justify-evenly items-center">
+                <Image className='rounded' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
+                <div className='max-w-[35rem] border-l-2 px-10 border-r-2 border-gray-500'>
+                    <div className='flex space-x-1'>
+                        <span className=" font-customFont  text-gray-200 text-6xl font-bold mb-7">ABOUT ME</span>
+                        <MoveDownLeft size={55} />
+                    </div>
+                    <p className="text-base lg:text-lg antialiased">
+                        I am a full stack web developer with a passion for creating
+                        interactive and responsive web applications. I have experience
+                        working with <span className=' text-[#64ffda]'>  JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+                            mongoDB, Next.js, HTML, CSS, and Git</span>.
+                        <span className='py-3 inline-block'>
+                            Currently I'm studying in <span className=' text-[#64ffda]'> Cotton University  </span>pursuing <span className=' text-[#64ffda]'> BCA</span> degree.
+                        </span>
+                        I am a quick learner and I am always
+                        looking to expand my knowledge and skill set. I am a team player and
+                        I am excited to work with others to create amazing applications.
+                    </p>
                 </div>
-            </div>
-            <div className="image ">
-                <Image src={'/assets/myImage.jpg'} className='photo rounded-full ' height={360} width={360} alt='My image'></Image>
-            </div>
+            </motion.div >
+            <motion.div initial={{ opacity: 0.0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                    delay: 0.3,
+                    duration: 0.8,
+                    ease: "easeInOut",
+                }} className='skills pt-52 '>
+                <div className='flex px-60'>
+                    <span className=" font-customFont  text-gray-200 text-6xl font-bold mb-4">SKILLS</span>
+                    <MoveDownLeft size={55} />
+                </div>
+                <div className='flex flex-wrap px-60 pt-7 justify-center items-center gap-6 '>
+                    {
+                        techSkills.techSkills.map((skills: Skills) => {
+                            return (
+                                <div className=' h-24 w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700' key={skills.id}>
+                                    <Image src={skills.image} alt={skills.name} height={100} width={100}></Image>
+                                </div>
+                            )
+
+                        })
+                    }
+                </div>
+            </motion.div>
         </div>
     )
 }

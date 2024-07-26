@@ -1,0 +1,79 @@
+{
+    "techSkills": [
+        {
+            "id": 1,
+            "name": "html",
+            "image": "/assets/html.svg"
+        },
+        {
+            "id": 2,
+            "name": "CSS",
+            "image": "/assets/css.svg"
+        },
+        {
+            "id": 4,
+            "name": "Java Script",
+            "image": "/assets/javascript.svg"
+        },
+        {
+            "id": 5,
+            "name": "Tailwind",
+            "image": "/assets/tailwind-css-2.svg"
+        },
+        {
+            "id": 6,
+            "name": "react",
+            "image": "/assets/react.svg"
+        },
+        {
+            "id": 7,
+            "name": "Typescript",
+            "image": "/assets/typescript.svg"
+        },
+        {
+            "id": 8,
+            "name": "Node js",
+            "image": "/assets/nodejs.svg"
+        },
+        {
+            "id": 9,
+            "name": "Express js",
+            "image": "/assets/express-js.svg"
+        },
+        {
+            "id": 10,
+            "name": "Next js",
+            "image": "/assets/next-js.svg"
+        },
+        {
+            "id": 11,
+            "name": "Redux",
+            "image": "/assets/redux.svg"
+        },
+        {
+            "id": 12,
+            "name": "my sql",
+            "image": "/assets/mysql.svg"
+        },
+        {
+            "id": 13,
+            "name": "mongoDB",
+            "image": "/assets/mongodb.svg"
+        },
+        {
+            "id": 14,
+            "name": "Github",
+            "image":  "/assets/github.svg"
+        },
+        {
+            "id": 15,
+            "name": "vs code",
+            "image": "/assets/vscode.svg"
+        },
+        {
+            "id": 16,
+            "name": "AWS",
+            "image": "/assets/amazon.svg"
+        }
+    ]
+}
