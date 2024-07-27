@@ -55,7 +55,7 @@ function Connect() {
                     <span className='font-customFont border-b-2 text-nowrap border-gray-400'>
                         let&apos;s talk
                     </span>
-                    <ScrollLink to='talk' duration={60}>
+                    <ScrollLink to='talk' smooth={true} duration={60}>
                         <ArrowDownLeft className='h-16 w-16 md:h-20 md:w-20 xl:h-28 xl:w-28' size={100} />
                     </ScrollLink>
                 </div>

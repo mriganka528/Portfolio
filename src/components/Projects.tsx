@@ -18,7 +18,7 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='w-screen  border-b border-gray-500  py-24  md:py-36 lg:py-44  xl:py-52 '>
+    <section id='projects' className='w-screen  border-b border-[#33353F]  py-24  md:py-36 lg:py-44  xl:py-52 '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
