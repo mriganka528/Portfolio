@@ -59,20 +59,10 @@ body {
   -webkit-text-fill-color: transparent;
   padding-block: 0;
   white-space: nowrap;
-  /* letter-spacing: .44rem; */
+  letter-spacing: .02rem;
+  
 }
 
-.Type {
-  background: -webkit-linear-gradient(94deg, #ffffff 0%, #b20cea 100%);
-  font-size: 6rem;
-  font-weight: 600;
-  text-align: left;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-  /* letter-spacing: .44rem; */
-  animation: typing 2s steps(28, end) infinite;
-}
 
 @media(max-width:1024px) {
   .heading {
@@ -101,17 +91,6 @@ body {
 
   .Type {
     font-size: 2rem;
-  }
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
   }
 }
 
@@ -170,4 +149,32 @@ body {
 }
 .scale_logo :hover{
   transform: scale(.98);
+}
+.loader {
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid #ebe4e4;
+  animation: prixClipFix 2s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }

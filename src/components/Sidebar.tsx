@@ -22,33 +22,33 @@ function Sidebar() {
       <SheetContent>
         <SheetHeader >
           <SheetTitle className='flex justify-center pt-14'>
-            <ScrollLink to='home' >
-              <Image src={'/assets/logos/newLogo.png'} alt='logo' height={40} width={40}></Image>
+            <ScrollLink to='home' duration={65} >
+              <SheetClose>
+                <Image src={'/assets/logos/newLogo.png'} alt='logo' height={40} width={40}></Image>
+              </SheetClose>
             </ScrollLink>
           </SheetTitle>
         </SheetHeader>
         <div className='flex justify-center'>
           <ul className="list-none flex flex-col text-center gap-y-9 pt-10 hover:text-white ">
             <li className=' hover:text-[#bbc1c0] logo_jump' >
-              <SheetClose>
-                <ScrollLink to="home" smooth={true} duration={60} className='cursor-pointer'>
-                  HOME
-                </ScrollLink>
-              </SheetClose>
-            </li>
-            <li className=' hover:text-[#bbc1c0] logo_jump' >
-              <ScrollLink to="about" smooth={true} duration={70} className='cursor-pointer'>
-                ABOUT
+              <ScrollLink to="home" smooth={true} duration={65} className='cursor-pointer'>
+                <SheetClose>HOME</SheetClose>
               </ScrollLink>
             </li>
             <li className=' hover:text-[#bbc1c0] logo_jump' >
-              <ScrollLink to="projects" smooth={true} duration={60} className='cursor-pointer'>
-                PROJECTS
+              <ScrollLink to="about" smooth={true} duration={65} className='cursor-pointer'>
+                <SheetClose>ABOUT </SheetClose>
               </ScrollLink>
             </li>
             <li className=' hover:text-[#bbc1c0] logo_jump' >
-              <ScrollLink to="connect" smooth={true} duration={70} className='cursor-pointer'>
-                CONNECT
+              <ScrollLink to="projects" smooth={true} duration={65} className='cursor-pointer'>
+                <SheetClose>  PROJECTS</SheetClose>
+              </ScrollLink>
+            </li>
+            <li className=' hover:text-[#bbc1c0] logo_jump' >
+              <ScrollLink to="connect" smooth={true} duration={65} className='cursor-pointer'>
+                <SheetClose>CONNECT</SheetClose>
               </ScrollLink>
             </li>
           </ul>

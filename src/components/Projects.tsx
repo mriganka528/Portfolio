@@ -22,8 +22,8 @@ function Projects() {
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.3,
-          duration: 0.8,
+          delay: 0.1,
+          duration: 0.7,
           ease: "easeInOut",
         }} className='pt-32  md:pt-36 lg:pt-44  xl:pt-52 pb-7 '>
         <div className='flex  px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-end'>
@@ -60,7 +60,7 @@ function Projects() {
                 <button
                   className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black bg-opacity-50 text-white p-2 rounded-md"
                 >
-                  Watch Video
+                  {project.name}
                 </button>
               </div>
               <div
