@@ -24,9 +24,9 @@ function HomeComp() {
                             <span className="buttonContent">Hire Me</span>
                         </Link>
 
-                        <a href={'/assets/cv.pdf'} download className='button border border-[rgb(117, 3, 117)]'  >
+                        <Link href={'/assets/cv.pdf'} target='_blank' download={'CV'} className='button border border-[rgb(117, 3, 117)]'  >
                             <span className='buttonContent'>Download CV</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <span className='h-[.1rem] w-[10%] bg-gray-500'></span>

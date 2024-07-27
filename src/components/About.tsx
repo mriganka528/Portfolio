@@ -18,7 +18,7 @@ function About() {
                     delay: 0.3,
                     duration: 0.8,
                     ease: "easeInOut",
-                }} className="mt-4 lg:pt-44  xl:pt-52 w-screen  text-left flex flex-col gap-y-24 lg:gap-y-0 lg:flex-row  lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
+                }} className="mt-4 lg:pt-44  xl:pt-52 w-screen text-left flex flex-col gap-y-24 lg:gap-y-0 lg:flex-row  lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
                 <Image className='rounded hidden lg:flex ' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
                 <Image className='photo rounded flex lg:hidden ' src={'/assets/profile/me2.png'} alt='about image' height={260} width={260}></Image>
                 <div className='max-w-[35rem] mx-6 xl:mx-0  lg:pt-0 border-l-2 px-6 sm:px-10 border-r-2 border-gray-500'>
