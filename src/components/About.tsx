@@ -18,13 +18,13 @@ function About() {
                     delay: 0.1,
                     duration: 0.7,
                     ease: "easeInOut",
-                }} className="mt-4 lg:pt-44  xl:pt-52 w-screen text-left flex flex-col gap-y-24 lg:gap-y-0 lg:flex-row  lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
+                }} className="mt-4  border-t border-gray-500 pt-28 lg:pt-44  xl:pt-52 w-screen text-left flex flex-col gap-y-16 lg:gap-y-0 lg:flex-row  lg:justify-center xl:justify-evenly 2xl:justify-evenly items-center">
                 <Image className='rounded hidden lg:flex ' src={'/assets/about-image.png'} alt='about image' height={500} width={500}></Image>
                 <Image className='photo rounded flex lg:hidden ' src={'/assets/profile/me2.png'} alt='about image' height={260} width={260}></Image>
                 <div className='max-w-[35rem] mx-6 xl:mx-0  lg:pt-0 border-l-2 px-6 sm:px-10 border-r-2 border-gray-500'>
                     <div className='flex justify-end space-x-1'>
-                        <span className=" font-customFont text-2xl   sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">ABOUT ME</span>
-                        <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
+                        <span className=" font-customFont text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">ABOUT ME</span>
+                        <MoveDownLeft className='h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
                     </div>
                     <p className="text-sm sm:text-base lg:text-lg antialiased">
                         I&apos;m a full stack web developer with a passion for creating
@@ -40,7 +40,7 @@ function About() {
                     </p>
                 </div>
             </motion.div>
-            <div className='skills  w-screen pt-20 sm:pt-24 md:pt-32 xl:pt-52 '>
+            <div className='skills border-b border-gray-500  pb-28 lg:pb-44  xl:pb-52   w-screen pt-14 sm:pt-24 md:pt-32 xl:pt-52 '>
                 <motion.div initial={{ opacity: 0.0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{
@@ -49,10 +49,10 @@ function About() {
                         ease: "easeInOut",
                     }} className='flex justify-start px-14 sm:px-32 px-50 md:px-48 lg:px-60 '>
 
-                    <span className=" font-customFont text-2xl  sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">SKILLS</span>
-                    <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
+                    <span className=" font-customFont  text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">SKILLS</span>
+                    <MoveDownLeft className='h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
                 </motion.div>
-                <div className='flex flex-wrap px-20 sm:px-32 md:px-60 pt-4 sm:pt-7 justify-center items-center gap-6 '>
+                <div className='flex flex-wrap px-20 sm:px-32 md:px-60 pt-3 sm:pt-7 justify-center items-center gap-6 '>
                     {
                         techSkills.techSkills.map((skills: Skills) => {
                             return (

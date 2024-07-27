@@ -18,17 +18,17 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='w-screen '>
+    <section id='projects' className='w-screen  border-b border-gray-500  py-24  md:py-36 lg:py-44  xl:py-52 '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
           duration: 0.7,
           ease: "easeInOut",
-        }} className='pt-32  md:pt-36 lg:pt-44  xl:pt-52 pb-7 '>
-        <div className='flex  px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-end'>
-          <span className=" font-customFont text-2xl  sm:text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">PROJECTS</span>
-          <MoveDownLeft className='h-7 w-7 sm:h-9 sm:w-9 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
+        }} className=' '>
+        <div className=' flex px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-end pb-5 sm:pb-7 lg:pb-10'>
+          <span className=" font-customFont text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">PROJECTS</span>
+          <MoveDownLeft className='h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
         </div>
       </motion.div>
       <div>

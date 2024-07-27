@@ -15,7 +15,7 @@ function MobileNav() {
             }} className=' fixed z-50  min-[768px]:hidden  border-l border-r border-b rounded border-gray-700 w-screen  flex justify-between items-center text-base backdrop-blur-sm px-5 py-2.5'>
             <div>
                 <ScrollLink to='home' duration={65}>
-                    <Image src={'/assets/logos/newLogo.png'} height={42} width={42} alt='Logo'></Image>
+                    <Image src={'/assets/logos/nLogo.png'}  height={70} width={70} alt='Logo'></Image>
                 </ScrollLink>
             </div>
             <Sidebar />
