@@ -6,6 +6,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import projects from "@/data/projects.json"
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import VideoPlayer from './VideoPlayer';
 interface Projects {
   "id": number,
   "name": string,
@@ -13,8 +14,8 @@ interface Projects {
   "tags": Array<string>,
   "Link": string,
   "image": string,
-  "gitLink": string
-
+  "gitLink": string,
+  "videoSrc": string
 }
 function Projects() {
   return (
@@ -50,18 +51,7 @@ function Projects() {
               key={project.id}
             >
               <div className="relative flex-[0.9] group">
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  width={800}
-                  height={500}
-                  className="w-full h-full object-cover rounded-[4px]"
-                />
-                <button
-                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black bg-opacity-50 text-white p-2 rounded-md"
-                >
-                  {project.name}
-                </button>
+                <VideoPlayer videoSrc={project.videoSrc} />
               </div>
               <div
                 className={`flex-[1] ${project.id % 2 === 0 ? "text-right" : "text-left"

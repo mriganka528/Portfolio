@@ -10,7 +10,8 @@
                 "Bootstrap "
             ],
             "Link": "https://text-master-coral.vercel.app",
-            "gitLink":"https://github.com/mriganka528/Text-converter.git"
+            "gitLink":"https://github.com/mriganka528/Text-converter.git",
+            "videoSrc":"/assets/projects/textMaster.mp4"
         },
         {
             "id": 2,
@@ -22,7 +23,9 @@
                 "FetchAPI"
             ],
             "Link": "https://image-generator-flax.vercel.app/",
-            "gitLink":"https://github.com/mriganka528/Image-generator.git"
+            "gitLink":"https://github.com/mriganka528/Image-generator.git",
+            "videoSrc":"/assets/projects/inspireArt.mp4"
+
         },
         {
             "id": 3,
@@ -36,7 +39,8 @@
                 "Tailwind"
             ],
             "Link": "https://my-portfolio-delta-nine-43.vercel.app/",
-            "gitLink":"https://github.com/mriganka528/portfolio.git"
+            "gitLink":"https://github.com/mriganka528/portfolio.git",
+            "videoSrc":"/assets/projects/portfolio.mp4"
         },
         {
             "id": 4,
@@ -49,7 +53,8 @@
                 "Redux"
             ],
             "Link": "https://task-vault-zeta.vercel.app",
-            "gitLink":"https://github.com/mriganka528/TaskVault.git"
+            "gitLink":"https://github.com/mriganka528/TaskVault.git",
+            "videoSrc":"/assets/projects/taskVault.mp4"
         },
         {
             "id": 5,
@@ -60,10 +65,12 @@
                 "ReactJs",
                 "NodeJs",
                 "ExpressJS",
-                "MongoDB"
+                "MongoDB",
+                "Bootstrap "
             ],
             "Link": "https://notecraft-front.vercel.app",
-            "gitLink":"https://github.com/mriganka528/Notecraft-front.git"
+            "gitLink":"https://github.com/mriganka528/Notecraft-front.git",
+            "videoSrc":"/assets/projects/noteCraft.mp4"
         },
         {
             "id": 6,
@@ -77,7 +84,8 @@
                 "Tailwind"
             ],
             "Link": "https://beat-boulevard.vercel.app/",
-            "gitLink":"https://github.com/mriganka528/Beat-boulevard.git"
+            "gitLink":"https://github.com/mriganka528/Beat-boulevard.git",
+            "videoSrc":"/assets/projects/musicCrs.mp4"
         }
     ]
 }
