@@ -50,11 +50,11 @@ function Connect() {
                     duration: 0.7,
                     ease: "easeInOut",
                 }} className='  flex flex-col justify-center items-center text-gray-200 text-5xl md:text-6xl xl:text-7xl font-extrabold px-2  text-wrap'>
-                <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
+                <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-9'>
                     <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">GET IN TOUCH</span>
                     <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
                 </div>
-                <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
+                <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto text-center">
                     Ready to start your next project? Let&apos;s work together to create something amazing.
                 </p>
             </motion.div>

@@ -25,11 +25,11 @@ function Projects() {
           duration: 0.7,
           ease: "easeInOut",
         }}>
-        <div className=' flex px-5 justify-center items-center flex-col pb-5 sm:pb-7 lg:pb-10'>
+        <div className=' flex px-5 justify-center items-center flex-col pb-5 sm:pb-7 lg:pb-9'>
           <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">FEATURED PROJECTS</span>
           <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
         </div>
-        <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
+        <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto text-center">
           Here are some of my recent projects that showcase my skills and passion for development
         </p>
       </motion.div>
@@ -73,7 +73,7 @@ function Projects() {
                 >
                   {project.tags.map(
                     (tech: string, techIndex: number) => (
-                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 transition-transform hover:scale-105 ease-in delay-100 text-xs sm:text-sm rounded-full'>
+                      <li  key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 transition-transform hover:scale-110 cursor-context-menu ease-in delay-100 text-xs sm:text-sm rounded-full'>
                         {tech}
                       </li>
                     )

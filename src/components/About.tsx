@@ -21,18 +21,18 @@ function About() {
                 }} className="container mx-auto px-6">
                 <div className="sm:max-w-4xl md:max-w-6xl mx-auto ">
                     <div className="text-center mb-16">
-                        <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
+                        <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-9'>
                             <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">ABOUT ME</span>
                             <div className="w-24 sm:w-48 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
                         </div>
-                        <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
+                        <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto text-center">
                             Passionate developer crafting digital experiences that bridge creativity and technology
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
-                            <p className="text-sm sm:text-base lg:text-lg text-center antialiased leading-relaxed">
+                            <p className=" sm:text-lg  text-center antialiased leading-relaxed">
                                 I&apos;m a full stack web developer with a passion for creating
                                 interactive and responsive web applications. I have experience
                                 working with <span className=' bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400'>  JavaScript, React, Redux, Node.js, Express, PostgreSQL,
@@ -89,11 +89,11 @@ function About() {
                     </div>
                 </div>
                 <div className="text-center mt-16 sm:mt-32 border-t border-gray-500 pb-5 pt-16 sm:pt-24">
-                    <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
+                    <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-9'>
                         <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">SKILLS & EXPERTISE</span>
                         <div className="w-24 sm:w-48 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
                     </div>
-                    <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
+                    <p className="text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto text-center">
                         A comprehensive toolkit of modern technologies and methodologies to bring your ideas to life
                     </p>
                     <div className='flex flex-wrap justify-center items-center gap-6 pt-7 sm:pt-10 px-6 md:px-20 lg:px-56 '>

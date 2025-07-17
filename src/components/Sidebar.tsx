@@ -33,11 +33,11 @@ function Sidebar() {
         <div className='flex items-center flex-col justify-center  space-y-7 mt-14'>
 
           <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#home'}><SheetClose className='w-full'> <span className='text-lg'>Home</span> </SheetClose></Link>
-          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#about'}><SheetClose className='w-full'>About</SheetClose></Link>
-          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#projects'}><SheetClose className='w-full'>Projects</SheetClose></Link>
-          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#connect'}><SheetClose className='w-full'>Connect</SheetClose></Link>
+          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#about'}><SheetClose className='w-full'><span className='text-lg'>About</span></SheetClose></Link>
+          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#projects'}><SheetClose className='w-full'><span className='text-lg'>Projects</span></SheetClose></Link>
+          <Link className='bg-[#1c1c1c] rounded-xl w-full text-center px-6 py-4 border-x-2 border-gray-600 hover:scale-105 transition-transform delay-100 ' href={'#connect'}><SheetClose className='w-full'><span className='text-lg'>Connect</span></SheetClose></Link>
         </div>
-        {/* <SheetFooter>
+        {/* <SheetFooter><span className='text-lg'></span>
         <div className='flex w-full items-center justify-center'>
           <Link href={'/'} className='bg-[#1c1c1c] rounded-full px-6 py-2.5 border border-gray-300 hover:scale-110 transition-transform'>
             Connect me
