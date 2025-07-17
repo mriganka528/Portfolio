@@ -21,7 +21,7 @@ function MobileNav() {
             hidden: { y: "-100%" },
         }}
             animate={hidden ? "hidden" : "visible"}
-            transition={{ duration: 0.35, ease: "easeInOut" }} className=' fixed z-50  min-[768px]:hidden   border-b rounded-b-[.7rem] border-gray-700 w-screen  flex justify-between items-center text-base bg-[#0b0909]/95  px-5 py-[1.4rem]'>
+            transition={{ duration: 0.35, ease: "easeInOut" }} className=' fixed z-50  min-[768px]:hidden   border-b rounded-b-[.7rem] border-gray-700 w-screen  flex justify-between items-center text-base bg-[#0b0909]/95  px-5 py-[1.2rem]'>
             <div>
                 <ScrollLink to='home' smooth={true} duration={65}>
                     <Image src={'/assets/logos/Logo.png'} height={45} width={55} alt='Logo'></Image>
