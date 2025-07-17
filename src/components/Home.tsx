@@ -1,9 +1,7 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { TypeAnimation } from "react-type-animation";
 import { saveAs } from 'file-saver';
 function HomeComp() {
     const handleDownload = () => {
@@ -22,7 +20,7 @@ function HomeComp() {
             <div className=' flex flex-col  justify-center items-center  '>
                 <div className=' flex- justify-center items-center'>
                     <h1 className="text-5xl md:text-7xl text-center font-bold text-white mb-6 animate-fade-in">
-                        Hi, I'm{" "}
+                        Hi, I&apos;m{" "}
                         <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Mriganka Sarma</span>
                     </h1>
                     <p className="text-xl text-center md:text-2xl text-gray-300 mb-8  animate-fade-in-delay">

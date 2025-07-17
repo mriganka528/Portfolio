@@ -51,7 +51,7 @@ function Connect() {
                     <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
                 </div>
                 <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
-                    Ready to start your next project? Let's work together to create something amazing.
+                    Ready to start your next project? Let&apos;s work together to create something amazing.
                 </p>
             </motion.div>
             <motion.div id='talk' initial={{ opacity: 0.0, y: 40 }}

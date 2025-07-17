@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Award, Code2, MoveDownLeft, Zap } from 'lucide-react'
+import { Award, Code2,  Zap } from 'lucide-react'
 import techSkills from "@/data/skills.json"
 import { motion } from 'framer-motion'
 interface Skills {
