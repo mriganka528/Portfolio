@@ -15,10 +15,11 @@
 
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: #0c0c0c;
+  background: #0b0909;
   color: aliceblue;
   overflow-x: hidden;
 }
@@ -133,15 +134,7 @@ body {
   transition: all 0.475s;
 }
 
-.logo_jump {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
 
-.logo_jump:hover {
-  transform: translateY(-1.8px);
-
-}
 
 .scale_logo {
   display: inline-block;

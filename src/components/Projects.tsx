@@ -5,7 +5,6 @@ import React from 'react'
 import { ExternalLink, Github } from 'lucide-react';
 import projects from "@/data/projects.json"
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import VideoPlayer from './VideoPlayer';
 interface Projects {
   "id": number,
@@ -19,7 +18,7 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='w-screen  border-b border-[#33353F]  py-24  md:py-36 lg:py-44  xl:py-52 '>
+    <section id='projects' className='w-screen  border-y border-[#33353F]  pb-24  md:pb-36 lg:pb-44  xl:pb-52  pt-24  '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -27,13 +26,16 @@ function Projects() {
           duration: 0.7,
           ease: "easeInOut",
         }} className=' '>
-        <div className=' flex px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-end pb-5 sm:pb-7 lg:pb-10'>
-          <span className=" font-customFont text-3xl lg:text-5xl text-gray-200 xl:text-6xl font-bold mb-7">PROJECTS</span>
-          <MoveDownLeft className='h-8 w-8 lg:h-12 lg:w-12 xl:h-14 xl:w-14' size={55} />
+        <div className=' flex px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-center items-center flex-col pb-5 sm:pb-7 lg:pb-10'>
+          <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">FEATURED PROJECTS</span>
+          <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
         </div>
+        <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
+              Here are some of my recent projects that showcase my skills and passion for development
+            </p>
       </motion.div>
       <div>
-        <div className="flex flex-col gap-10 space-y-7  px-14 sm:px-32 px-50 md:px-48 lg:px-60  ">
+        <div className="flex flex-col gap-10 space-y-7 mt-10 sm:mt-20 px-14 sm:px-32 px-50 md:px-48 lg:px-60  ">
           {projects.projects.map((project: Projects) => (
             <motion.div
               initial={{ opacity: 0, y: 90 }}
@@ -72,7 +74,7 @@ function Projects() {
                 >
                   {project.tags.map(
                     (tech: string, techIndex: number) => (
-                      <li key={techIndex} style={{ wordSpacing: "-3px", color: "#64ffda" }} className=' border border-slate-800 px-[5px] py-[2px] rounded-[4px]'>
+                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 text-sm rounded-full'>
                         {tech}
                       </li>
                     )
@@ -83,7 +85,10 @@ function Projects() {
                     }`}
                 >
                   <Link href={project.Link} target="_blank">
-                    <p className="flex items-center text-sm sm:text-base lg:text-lg  antialiased gap-2 cursor-pointer">
+                    <div className="flex gap-4">
+
+                    </div>
+                    <p className=" text-sm antialiased  cursor-pointer flex items-center gap-2   text-purple-400 hover:text-white bg-transparent border border-purple-500 px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
                       Live Demo{" "}
                       <span>
                         <ExternalLink size={18} />
@@ -91,11 +96,12 @@ function Projects() {
                     </p>
                   </Link>
                   <Link href={project.gitLink} target="_blank">
-                    <p className="flex items-center gap-2 cursor-pointer text-sm sm:text-base lg:text-lg  antialiased">
+                    <p className="text-sm antialiased flex items-center gap-2 hover:bg-gray-500 hover:text-white bg-transparent border border-gray-500/30 px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
                       GitHub{" "}
                       <span>
                         <Github size={18} />
                       </span>
+
                     </p>
                   </Link>
                 </div>

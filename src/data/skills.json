@@ -74,6 +74,11 @@
             "id": 16,
             "name": "AWS",
             "image": "/assets/languages/amazon.svg"
+        },
+        {
+            "id": 17,
+            "name": "postgresql",
+            "image": "/assets/languages/postgresql-original-wordmark.svg"
         }
     ]
 }
