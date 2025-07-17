@@ -24,8 +24,8 @@ function Projects() {
           delay: 0.1,
           duration: 0.7,
           ease: "easeInOut",
-        }} className=' '>
-        <div className=' flex px-14 sm:px-32 px-50 md:px-48 lg:px-60  justify-center items-center flex-col pb-5 sm:pb-7 lg:pb-10'>
+        }}>
+        <div className=' flex px-5 justify-center items-center flex-col pb-5 sm:pb-7 lg:pb-10'>
           <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">FEATURED PROJECTS</span>
           <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
         </div>

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { Instagram, Linkedin,  Loader2, Mail, Twitter } from 'lucide-react'
+import { Instagram, Linkedin, Loader2, Mail, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { toast } from 'react-hot-toast';
@@ -49,7 +49,7 @@ function Connect() {
                     delay: 0.1,
                     duration: 0.7,
                     ease: "easeInOut",
-                }} className=' font-customFont flex flex-col justify-center items-center text-gray-200 text-5xl md:text-6xl xl:text-7xl font-extrabold mb-4 uppercase text-wrap'>
+                }} className='  flex flex-col justify-center items-center text-gray-200 text-5xl md:text-6xl xl:text-7xl font-extrabold px-2  text-wrap'>
                 <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
                     <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">GET IN TOUCH</span>
                     <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
