@@ -88,7 +88,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="text-center mt-16 sm:mt-32 border-t border-gray-500  py-16 sm:py-24">
+                <div className="text-center mt-16 sm:mt-32 border-t border-gray-500 pb-5 pt-16 sm:pt-24">
                     <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
                         <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">SKILLS & EXPERTISE</span>
                         <div className="w-24 sm:w-48 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
@@ -96,7 +96,7 @@ function About() {
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
                         A comprehensive toolkit of modern technologies and methodologies to bring your ideas to life
                     </p>
-                    <div className='flex flex-wrap px-20 sm:px-32 md:px-60 pt-3 sm:pt-10 justify-center items-center gap-6 '>
+                    <div className='flex flex-wrap justify-center items-center gap-6 pt-7 sm:pt-10 px-6 md:px-20 lg:px-56 '>
                         {
                             techSkills.techSkills.map((skills: Skills) => {
                                 return (

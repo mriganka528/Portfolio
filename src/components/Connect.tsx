@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { Instagram, IterationCcw, Linkedin, Loader, Loader2, Mail, RotateCcw, RotateCw, Twitter } from 'lucide-react'
+import { Instagram, Linkedin,  Loader2, Mail, Twitter } from 'lucide-react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { toast } from 'react-hot-toast';
@@ -10,7 +10,6 @@ interface DATA {
     message: HTMLFormElement,
 }
 function Connect() {
-    const [emailSubmited, setEmailSubmitted] = useState(false);
     const [Loading, setLoading] = useState(false);
     const handleSubmit = async (e: any) => {
         setLoading(true)
@@ -36,14 +35,14 @@ function Connect() {
             console.log("Message sent. ", resData);
             toast.success("Message sent successfully!");
             e.target.reset();
-            setEmailSubmitted(true);
             setLoading(false);
         } else {
+            setLoading(false);
             toast.error("Failed to send message. Please try again later.");
         }
     }
     return (
-        <section id='connect' className='pt-24 pb-40'>
+        <section id='connect' className='pt-20 pb-28'>
             <motion.div initial={{ opacity: 0.0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -65,7 +64,7 @@ function Connect() {
                     delay: 0.3,
                     duration: 0.8,
                     ease: "easeInOut",
-                }} className='flex flex-col  md:flex-row  px-14 sm:px-32  md:px-48 lg:px-60 justify-center items-center sm:items-start pt-10 sm:pt-20 gap-x-10  '>
+                }} className='flex flex-col  md:flex-row px-16 sm:px-20  lg:px-48  justify-center items-center sm:items-start pt-10 sm:pt-20 gap-x-0  '>
 
                 <div className='flex flex-col text-center sm:mt-2  md:text-left max-w-[100%] gap-y-5 lg:gap-y-7'>
                     <h3 className="text-2xl font-bold  ">Let&apos;s Connect</h3>
@@ -92,8 +91,6 @@ function Connect() {
                     </div>
                 </div>
                 <div className='w-[100%]  pt-16 md:pt-0  '>
-
-
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <div className="mb-6">
                             <label

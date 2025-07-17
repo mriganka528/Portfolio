@@ -17,7 +17,7 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='w-screen  bg-[#101010]  pb-24  md:pb-36 lg:pb-44  xl:pb-52  pt-24  '>
+    <section id='projects' className='w-screen  bg-[#101010]  pb-24  md:pb-28 pt-20  '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -30,8 +30,8 @@ function Projects() {
           <div className="w-40 sm:w-60 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
         </div>
         <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
-              Here are some of my recent projects that showcase my skills and passion for development
-            </p>
+          Here are some of my recent projects that showcase my skills and passion for development
+        </p>
       </motion.div>
       <div>
         <div className="flex flex-col gap-10 space-y-7 mt-10 sm:mt-20 px-14 sm:px-32 px-50 md:px-48 lg:px-60  ">
@@ -73,21 +73,19 @@ function Projects() {
                 >
                   {project.tags.map(
                     (tech: string, techIndex: number) => (
-                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 transition-transform hover:scale-105 ease-in delay-100 text-sm rounded-full'>
+                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 transition-transform hover:scale-105 ease-in delay-100 text-xs sm:text-sm rounded-full'>
                         {tech}
                       </li>
                     )
                   )}
                 </div>
                 <div
-                  className={`flex items-center gap-10 mt-5 ${project.id % 2 === 0 ? "justify-end" : "justify-start"
+                  className={`flex items-center gap-5 sm:gap-10 mt-5 ${project.id % 2 === 0 ? "justify-end" : "justify-start"
                     }`}
                 >
                   <Link href={project.Link} target="_blank">
-                    <div className="flex gap-4">
 
-                    </div>
-                    <p className=" text-sm antialiased  cursor-pointer flex items-center gap-2   text-purple-400 hover:text-white bg-transparent border border-purple-500 px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
+                    <p className=" text-xs sm:text-sm antialiased  cursor-pointer flex items-center gap-2   text-purple-400 hover:text-white bg-transparent border border-purple-500 px-2 sm:px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
                       Live Demo{" "}
                       <span>
                         <ExternalLink size={18} />
@@ -95,7 +93,7 @@ function Projects() {
                     </p>
                   </Link>
                   <Link href={project.gitLink} target="_blank">
-                    <p className="text-sm antialiased flex items-center gap-2 hover:bg-gray-500 hover:text-white bg-transparent border border-gray-500/30 px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
+                    <p className="text-xs sm:text-sm antialiased flex items-center gap-2 hover:bg-gray-500 hover:text-white bg-transparent border border-gray-500/30 px-2 sm:px-3 py-2 rounded-[7px] transition-all duration-300 transform hover:scale-105">
                       GitHub{" "}
                       <span>
                         <Github size={18} />
