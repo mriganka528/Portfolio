@@ -108,7 +108,7 @@ function About() {
                                             duration: 0.6,
                                             ease: "easeInOut",
                                         }} className=' h-12 w-12 sm:h-16 sm:w-16  md:h-20 md:w-20 lg:h-24 lg:w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700  ' key={skills.id}>
-                                        <Image src={skills.image} alt={skills.name} height={100} width={100}></Image>
+                                        <Image src={skills.image} priority={true} alt={skills.name} height={100} width={100}></Image>
                                     </motion.div>
                                 )
 

@@ -52,7 +52,7 @@ function Projects() {
               key={project.id}
             >
               <div className="relative flex-[0.9] group">
-                <VideoPlayer videoSrc={project.videoSrc} />
+                <VideoPlayer videoSrc={project.videoSrc} thumbnail={project.image} />
               </div>
               <div
                 className={`flex-[1] ${project.id % 2 === 0 ? "text-right" : "text-left"

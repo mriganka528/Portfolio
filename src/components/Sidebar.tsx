@@ -25,7 +25,7 @@ function Sidebar() {
           <SheetTitle className='flex justify-center pt-14'>
             <ScrollLink to='home' smooth={true} duration={65} >
               <SheetClose>
-                <Image src={'/assets/logos/nLogo.png'} alt='logo' height={80} width={80}></Image>
+                <Image src={'/assets/logos/nLogo.png'} priority={true} alt='logo' height={80} width={80}></Image>
               </SheetClose>
             </ScrollLink>
           </SheetTitle>

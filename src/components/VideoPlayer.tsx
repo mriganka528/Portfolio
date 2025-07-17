@@ -3,7 +3,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Play } from 'lucide-react'
 import { CirclePause } from 'lucide-react'
 interface Props {
-    videoSrc: string
+    videoSrc: string,
+    thumbnail:string
 }
 function VideoPlayer(props: Props) {
     const videoRef = useRef<HTMLVideoElement>(null)
@@ -51,7 +52,7 @@ function VideoPlayer(props: Props) {
             <div className='absolute inset-0  opacity-0 group-hover:opacity-100 text-gray-300 transition-opacity bg-black bg-opacity-50  h-full w-full flex justify-center items-center'>
                 {isPaused ? <Play className='h-8 w-8 lg:h-11 lg:w-11' /> : <CirclePause className='h-8 w-8 lg:h-11 lg:w-11' />}
             </div>
-            <video className='rounded-[.7rem] ' ref={videoRef} src={props.videoSrc} autoPlay loop muted></video>
+            <video className='rounded-[.7rem] ' ref={videoRef} src={props.videoSrc} autoPlay loop muted preload="none" poster={props.thumbnail} ></video>
         </div>
     )
 }

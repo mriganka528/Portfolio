@@ -24,7 +24,7 @@ function Navbar() {
             animate={hidden ? "hidden" : "visible"}
             transition={{ duration: 0.35, ease: "easeInOut" }} className='z-50 fixed max-[768px]:hidden rounded-b-[1rem]  bg-[#0b0909]/95  w-svw py-2  sm:px-5 md:px-14 lg:px-16 text-base flex justify-between items-center'>
             <Link href={'/'}>
-                <Image src={'/assets/logos/nLogo.png'} alt='Logo' height={80} width={80}/>
+                <Image src={'/assets/logos/nLogo.png'}  priority={true} alt='Logo' height={80} width={80}/>
             </Link>
             <div className='flex items-center justify-center space-x-5'>
 
