@@ -22,10 +22,10 @@ function Navbar() {
             hidden: { y: "-100%" },
         }}
             animate={hidden ? "hidden" : "visible"}
-            transition={{ duration: 0.35, ease: "easeInOut" }} className='z-50 fixed max-[768px]:hidden rounded-b-[1rem]  bg-[#0b0909]/95  w-svw py-4  sm:px-5 md:px-14 lg:px-20 text-base flex justify-between items-center'>
-            <div>
+            transition={{ duration: 0.35, ease: "easeInOut" }} className='z-50 fixed max-[768px]:hidden rounded-b-[1rem]  bg-[#0b0909]/95  w-svw py-2  sm:px-5 md:px-14 lg:px-16 text-base flex justify-between items-center'>
+            <Link href={'/'}>
                 <Image src={'/assets/logos/nLogo.png'} alt='Logo' height={80} width={80}/>
-            </div>
+            </Link>
             <div className='flex items-center justify-center space-x-5'>
 
                 <Link className='bg-[#1c1c1c] rounded-full text-sm lg:text-base px-4 md:px-8 py-2.5 hover:scale-110 transition-transform delay-100 ' href={'#home'}>Home</Link>

@@ -31,11 +31,11 @@ function HomeComp() {
                     </p>
                 </div>
                 <div className='flex flex-col w-full sm:flex-row justify-center items-center  space-y-5  sm:space-y-0 sm:space-x-5 mt-8 sm:mt-5'>
-                    <Link href={'mailto:mrigankasarma222@gmail.com'} target='_blank' className=' w-[90%] sm:w-auto rounded-[8px] bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-2  px-8  flex justify-center items-center text-lg font-medium transition-all duration-300 transform hover:scale-105' >
+                    <Link href={'mailto:mrigankasarma222@gmail.com'} target='_blank' className=' w-[80%] sm:w-auto rounded-[8px] bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-2  px-8  flex justify-center items-center text-lg font-medium transition-all duration-300 transform hover:scale-105' >
                         Hire Me
                     </Link>
 
-                    <Link href={'/'} onClick={handleDownload} className='w-[90%] sm:w-auto border-2 bg-gray-100 rounded-[8px] border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white flex justify-center items-center px-8 py-2 text-lg font-medium transition-all duration-300 transform hover:scale-105'  >
+                    <Link href={'/'} onClick={handleDownload} className='w-[80%] sm:w-auto border-2 bg-gray-100 rounded-[8px] border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white flex justify-center items-center px-8 py-2 text-lg font-medium transition-all duration-300 transform hover:scale-105'  >
                         Download CV
                     </Link>
 

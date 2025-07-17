@@ -2,6 +2,24 @@
     "projects": [
         {
             "id": 1,
+            "name": "bulletinX",
+            "desc": "Welcome to bulletinX! This project is a digital notice board platform designed for schools, colleges and universities to efficiently manage and share important announcements. It allows multiple admins to create, edit, and categorize notices, while users can easily view, filter, and subscribe for updates. Built with modern technologies like Next.js, Prisma, PostgreSQL, and Clerk authentication, the system ensures real-time access, organized notice management, and an eco-friendly alternative to traditional paper-based boards (DEMO: email: mrj21012003@gmail.com, password: BulletinX@21).",
+            "image": "/assets/projects/bulletinX.png",
+            "tags": [
+                "NextJS",
+                "Tailwind",
+                "ShadCN ",
+                "Nodemailer",
+                "Prisma",
+                "PostgreSQL",
+                "Clerk"
+            ],
+            "Link": "https://pj-plum.vercel.app/",
+            "gitLink":"https://github.com/mriganka528/pj.git",
+            "videoSrc":"/assets/projects/bulletinX.mp4"
+        },
+        {
+            "id": 2,
             "name": "TextMaster",
             "desc": "Welcome to TextMaster! Our powerful text processing tool offers a range of features to enhance your text manipulation experience. You can easily convert text to UPPER CASE or lower case, capitalize each word, count the number of words, and even calculate the time required to read it. Experience seamless and efficient text processing with TextMaster.",
             "image": "/assets/projects/textconverter.png",
@@ -14,7 +32,7 @@
             "videoSrc":"/assets/projects/textMaster.mp4"
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "MysticPulse",
             "desc": "Welcome to MysticPulse! MysticPulse is your gateway to anonymous connections. Create a unique profile link, share it with anyone, and let them send you anonymous messages. You have full control over your experience—turn your message receiving status on or off as you wish. Whether you're curious about what others think or just want to have fun, MysticPulse keeps the mystery alive. Discover the hidden pulse of your connections, all while staying in control of your privacy.",
             "image": "/assets/projects/MysticPulse.png",
@@ -30,7 +48,7 @@
 
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "InspireArt",
             "desc": "Welcome to AI InspireArt! Our cutting-edge platform harnesses the power of artificial intelligence to generate stunning images effortlessly. Whether you need unique visuals for your projects, custom artwork, or creative designs, AI InspireArt has you covered. Simply input your ideas, and let our AI bring them to life with remarkable precision and creativity. Experience the future of image generation with AI InspireArt.",
             "image": "/assets/projects/imageGenerator.png",
@@ -44,7 +62,7 @@
 
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Portfolio",
             "desc": "Welcome to my professional portfolio website! This site serves as a comprehensive showcase of my work as a full-stack developer. Here, you'll find detailed information about my skills, projects, and professional journey. The website is designed to provide a user-friendly experience, highlighting my ability to create responsive and dynamic web applications. Explore my portfolio to see how I bring ideas to life through innovative technology and design.",
             "image": "/assets/projects/portfolio.png",
@@ -60,7 +78,7 @@
             "videoSrc":"/assets/projects/portfolio.mp4"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "TaskVault",
             "desc": "Our comprehensive task management website is designed to help you organize and prioritize your tasks effortlessly. With features that allow you to create, edit, and delete tasks, set deadlines, and track your progress, TaskMaster ensures you stay on top of your to-do list. Our intuitive interface and secure login system make task management a breeze. Achieve your goals and boost your productivity. ",
             "image": "/assets/projects/taskVault.png",
@@ -74,7 +92,7 @@
             "videoSrc":"/assets/projects/taskVault.mp4"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "NoteCraft",
             "desc": "Welcome to NoteCraft! Our innovative notebook website allows you to securely store your notes in the cloud, ensuring they are accessible anytime, anywhere. With robust login and sign-up features, your data is protected and private. NoteCraft also offers seamless functionality to add, edit, and delete notes, making it the perfect tool for all your note-taking needs. Experience secure and efficient note management with Notecraft.",
             "image": "/assets/projects/notecraft.png",
@@ -90,7 +108,7 @@
             "videoSrc":"/assets/projects/noteCraft.mp4"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "BeatVault(Frontend Website)",
             "desc": " Discover and enroll in expertly crafted music courses designed to elevate your skills. Whether you're a beginner or an advanced musician, our courses cover a wide range of instruments and genres, taught by professional instructors. Start your musical journey today with MusicCoursePro and unlock your full potential.",
             "image": "/assets/projects/musiccourse.png",

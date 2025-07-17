@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { Award, Code2,  Zap } from 'lucide-react'
+import { Award, Code2, Zap } from 'lucide-react'
 import techSkills from "@/data/skills.json"
 import { motion } from 'framer-motion'
 interface Skills {
@@ -32,7 +32,7 @@ function About() {
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
-                            <p className="text-sm sm:text-base lg:text-lg antialiased leading-relaxed">
+                            <p className="text-sm sm:text-base lg:text-lg text-center antialiased leading-relaxed">
                                 I&apos;m a full stack web developer with a passion for creating
                                 interactive and responsive web applications. I have experience
                                 working with <span className=' bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400'>  JavaScript, React, Redux, Node.js, Express, PostgreSQL,
@@ -56,8 +56,8 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="text-center mt-16 sm:mt-24 px-5 sm:px-20">
-                    <h3 className="text-3xl font-bold  mb-12">What I Bring to the Table</h3>
+                <div className="text-center mt-16 sm:mt-32 px-5 sm:px-20">
+                    <h3 className="text-2xl sm:text-3xl font-bold  mb-12">What I Bring to the Table</h3>
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="group">
                             <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
@@ -88,9 +88,9 @@ function About() {
                         </div>
                     </div>
                 </div>
-                <div className="text-center mt-24  mb-16">
+                <div className="text-center mt-16 sm:mt-32 border-t border-gray-500  py-16 sm:py-24">
                     <div className=' flex flex-col justify-center items-center  pb-5 sm:pb-7 lg:pb-10'>
-                        <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">Skills & Expertise</span>
+                        <span className=" font-customFont text-3xl lg:text-5xl text-center text-gray-200 xl:text-6xl font-bold mb-7">SKILLS & EXPERTISE</span>
                         <div className="w-24 sm:w-48 h-1 bg-gradient-to-r from-purple-400 to-blue-400 mx-auto "></div>
                     </div>
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto text-center">
@@ -102,11 +102,12 @@ function About() {
                                 return (
                                     <motion.div initial={{ opacity: 0.0, y: 40 }}
                                         whileInView={{ opacity: 1, y: 0 }}
+                                        whileHover={{ scale: 1.08 }}
                                         transition={{
                                             delay: 0.1,
                                             duration: 0.6,
                                             ease: "easeInOut",
-                                        }} className=' h-12 w-12 sm:h-16 sm:w-16  md:h-20 md:w-20 lg:h-24 lg:w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700' key={skills.id}>
+                                        }} className=' h-12 w-12 sm:h-16 sm:w-16  md:h-20 md:w-20 lg:h-24 lg:w-24 p-2 rounded-xl border shadow shadow-white flex justify-center items-center bg-slate-300 border-gray-700  ' key={skills.id}>
                                         <Image src={skills.image} alt={skills.name} height={100} width={100}></Image>
                                     </motion.div>
                                 )

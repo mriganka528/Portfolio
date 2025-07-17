@@ -79,6 +79,11 @@
             "id": 17,
             "name": "postgresql",
             "image": "/assets/languages/postgresql-original-wordmark.svg"
+        },
+        {
+            "id": 18,
+            "name": "prisma",
+            "image": "/assets/languages/prisma-original-wordmark.svg"
         }
     ]
 }

@@ -24,125 +24,22 @@ body {
   overflow-x: hidden;
 }
 
-.photo {
-  animation: morph 8s ease-in-out infinite;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid #3a3939;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  position: relative;
-  transition: all 1s ease-in-out;
-  margin-bottom: 20px;
-  position: relative;
+.logo {
+
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-}
-
-.heading {
-  background: -webkit-linear-gradient(95deg, #ffffff 0%, #b20cea 100%);
-  font-size: 6rem;
-  font-weight: 600;
-  text-align: left;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-block: 0;
-  white-space: nowrap;
-  letter-spacing: .02rem;
-  
-}
-
-
-@media(max-width:1024px) {
-  .heading {
-    font-size: 4rem;
-  }
-
-  .Type {
-    font-size: 4rem;
-  }
-}
-
-@media(max-width:768px) {
-  .heading {
-    font-size: 3rem;
-  }
-
-  .Type {
-    font-size: 3rem;
-  }
-}
-
-@media(max-width:600px) {
-  .heading {
-    font-size: 2rem;
-  }
-
-  .Type {
-    font-size: 2rem;
-  }
-}
-
-.button {
-  position: relative;
-  overflow: hidden;
-  height: 3rem;
-  padding: 0 1rem;
-  border-radius: .5rem;
-  background: #212025;
-  background-size: 400%;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-}
-
-.buttonContent {
-  position: relative;
-  top: 25%;
-  z-index: 2;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  width: 100%;
-  height: inherit;
-  border-radius: inherit;
-  background: linear-gradient(82.3deg,
-      rgba(150, 93, 233, 1) 10.8%,
-      rgba(99, 88, 238, 1) 94.3%);
-  transition: all 0.475s;
-}
-
-
 
 .scale_logo {
   display: inline-block;
   transition: transform 0.3s ease;
 }
-.scale_logo :hover{
+
+.scale_logo :hover {
   transform: scale(.98);
 }
+
 .loader {
   width: 2.7rem;
   height: 2.7rem;
@@ -150,6 +47,7 @@ body {
   position: relative;
   animation: rotate 1s linear infinite
 }
+
 .loader::before {
   content: "";
   box-sizing: border-box;
@@ -157,17 +55,33 @@ body {
   inset: 0px;
   border-radius: 50%;
   border: 5px solid #ebe4e4;
-  animation: prixClipFix 2s linear infinite ;
+  animation: prixClipFix 2s linear infinite;
 }
 
 @keyframes rotate {
-  100%   {transform: rotate(360deg)}
+  100% {
+    transform: rotate(360deg)
+  }
 }
 
 @keyframes prixClipFix {
-    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0)
+  }
+
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0)
+  }
+
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)
+  }
+
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%)
+  }
+
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0)
+  }
 }

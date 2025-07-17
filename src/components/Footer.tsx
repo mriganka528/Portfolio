@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from "framer-motion"
 function Footer() {
   return (
-    <footer className="bg-transparent border-t w-full border-gray-800 text-white py-12">
+    <footer className="w-full bg-[#101010]  py-12">
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

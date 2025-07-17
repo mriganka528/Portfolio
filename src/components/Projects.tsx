@@ -1,5 +1,4 @@
 'use client'
-import { MoveDownLeft } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 import { ExternalLink, Github } from 'lucide-react';
@@ -18,7 +17,7 @@ interface Projects {
 }
 function Projects() {
   return (
-    <section id='projects' className='w-screen  border-y border-[#33353F]  pb-24  md:pb-36 lg:pb-44  xl:pb-52  pt-24  '>
+    <section id='projects' className='w-screen  bg-[#101010]  pb-24  md:pb-36 lg:pb-44  xl:pb-52  pt-24  '>
       <motion.div initial={{ opacity: 0.0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -74,7 +73,7 @@ function Projects() {
                 >
                   {project.tags.map(
                     (tech: string, techIndex: number) => (
-                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 text-sm rounded-full'>
+                      <li key={techIndex} className=' border border-slate-800  py-[2px]  px-3  bg-gradient-to-r from-purple-500/20 to-blue-500/20  border-purple-500/30 text-purple-300 transition-transform hover:scale-105 ease-in delay-100 text-sm rounded-full'>
                         {tech}
                       </li>
                     )
