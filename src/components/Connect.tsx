@@ -64,7 +64,7 @@ function Connect() {
                     delay: 0.3,
                     duration: 0.8,
                     ease: "easeInOut",
-                }} className='flex flex-col  md:flex-row px-16 sm:px-20  lg:px-48  justify-center items-center sm:items-start pt-10 sm:pt-20 gap-x-0  '>
+                }} className='flex flex-col  md:flex-row px-12 sm:px-20  lg:px-48  justify-center items-center sm:items-start pt-10 sm:pt-20 gap-x-0  '>
 
                 <div className='flex flex-col text-center sm:mt-2  md:text-left max-w-[100%] gap-y-5 lg:gap-y-7'>
                     <h3 className="text-2xl font-bold  ">Let&apos;s Connect</h3>
