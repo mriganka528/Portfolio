@@ -10,7 +10,7 @@ export default function PreloadWrapper({ children }: { children: React.ReactNode
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 1300); 
+    }, 2000); 
     return () => clearTimeout(timeout);
   }, []);
 
