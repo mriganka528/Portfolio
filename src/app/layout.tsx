@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import MobileNav from "@/components/MobileNav";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
+import PreloadWrapper from "@/components/PreloadWrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -29,11 +30,13 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head>
       <body className={inter.className}>
-        <Toaster />
-        <MobileNav />
-        <Navbar />
-        {children}
-        <ScrollToTop />
+        <PreloadWrapper>
+          <Toaster />
+          <MobileNav />
+          <Navbar />
+          {children}
+          <ScrollToTop />
+        </PreloadWrapper>
       </body>
     </html>
   );

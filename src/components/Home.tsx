@@ -26,7 +26,7 @@ function HomeComp() {
                     <p className="text-xl text-center md:text-2xl text-gray-300 mb-8  animate-fade-in-delay">
                         Full Stack Developer from India
                     </p>
-                    <p className="text-lg text-center  text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-delay-2">
+                    <p className="text-lg text-center px-2 sm:px-0  text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in-delay-2">
                        I craft elegant, user-centric digital experiences that are both visually engaging and functionally impactful.
                     </p>
                 </div>
